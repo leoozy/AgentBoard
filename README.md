@@ -101,11 +101,10 @@ conda activate ${YOUR_ENV_NAME}
 
 
 **Step 3. Download the data from huggingface**
+
+Download the [data](https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing) and put it in `AgentBoard\data`
 ```shell
-# Download the data and move it to the project root dir
-cd AgentBoard
-mkdir data
-wget https://huggingface.co/datasets/hkust-nlp/agentboard/resolve/main/data.tar.gz
+cd AgentBoard/data
 tar -zxvf data.tar.gz
 ```
 
@@ -196,12 +195,11 @@ conda activate agentboard
 ```
 
 **Step 3. Download the code and data**
+Download the repo.
+Download the [data](https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing) and put it in `AgentBoard\data`.
 ```shell
-git clone https://github.com/hkust-nlp/AgentBoard.git  # clone repo
 # Download the data and move it to the project root dir
-cd AgentBoard
-mkdir data
-wget https://huggingface.co/datasets/hkust-nlp/agentboard/resolve/main/data.tar.gz
+cd AgentBoard/data
 tar -zxvf data.tar.gz
 ```
 
@@ -288,9 +286,10 @@ We now offer configuration for 12 SOTA LLM models (`gpt-4`,`gpt-3.5-turbo-0613`,
 ### Launch AgentBoard Analytical Evaluation Panel
 AgentBoard integrates illustrative [Weights&Bias](https://wandb.ai/site) visualization to help researchers better systematically analyze LLM agents. You can simply turn on `--wandb` switch in the arguments and customize the `project_name` and `baseline_dir` of your wandb project as the evaluation command above.
 
-Before running, you need to setup wandb login or environment variable as instructed in [quick-start](#setup-environment-variables-in-agentboardenv). The visualization results would be both stored offline at `\wandb`. Normally after executing the evaluation command, you can visualize the live AgentBoard panel online at `https://wandb.ai/{your_wandb_id}/{project_name}`. We provide example WandB logging pages for [GPT-4](https://wandb.ai/agentboard/llm-agent-eval-gpt-4-all), [GPT-3.5-Turbo](https://wandb.ai/agentboard/llm-agent-eval-gpt-35-turbo-all), and [DeepSeek-67b](https://wandb.ai/agentboard/llm-agent-eval-deepseek-67b-all).
+Before running, you need to setup wandb login or environment variable as instructed in [quick-start](#setup-environment-variables-in-agentboardenv). The visualization results would be both stored offline at `\wandb`. Normally after executing the evaluation command, you can visualize the live AgentBoard panel online at `https://wandb.ai/{your_wandb_id}/{project_name}`. We provide example WandB logging pages for [mistral-7b](https://wandb.ai/agentboard-anon/evaluate-mistral-7b?workspace=user-)
 
-Note that if your run is not logged online (on a cluster without internet), you could later sync local runs to wandb online with `wandb sync [OPTIONS] [PATH]..` as detailed in [wandb docs](https://docs.wandb.ai/ref/cli/wandb-sync). For more information about the features of the AgentBoard panel, Please kindly check this [Blog](https://wandb.ai/agentboard/llm-agent-eval-gpt-35-turbo-all/reports/Using-Wandb-to-Launch-AgentBoard--Vmlldzo2MTg1Njc4) for more information.
+Note that if your run is not logged online (on a cluster without internet), you could later sync local runs to wandb online with `wandb sync [OPTIONS] [PATH]..` as detailed in [wandb docs](https://docs.wandb.ai/ref/cli/wandb-sync). 
+<!--For more information about the features of the AgentBoard panel, Please kindly check this [Blog](https://wandb.ai/agentboard/llm-agent-eval-gpt-35-turbo-all/reports/Using-Wandb-to-Launch-AgentBoard--Vmlldzo2MTg1Njc4) for more information.-->
 
 
 #### Local log files
@@ -378,21 +377,12 @@ AgentBoard is composed of 9 diverse tasks which can be divided into 4 types, inc
 </table>
 
 
-To help researchers quickly understand evaluation data of each task, we provide **Dataset Viewer** at Huggingface Dataset: [🤗 AgentBoard](https://huggingface.co/datasets/hkust-nlp/agentboard).
+<!--o help researchers quickly understand evaluation data of each task, we provide **Dataset Viewer** at Huggingface Dataset: [🤗 AgentBoard](https://huggingface.co/datasets/hkust-nlp/agentboard).-->
 
 > Note: Please download the dataset from the link provided below for the reason that the data in Dataset Viewer is not complete.
 
 ### Download Link
-You can download the whole evaluation data by running the following command:
-```shell
-wget https://huggingface.co/datasets/hkust-nlp/agentboard/resolve/main/data.tar.gz
-```
-Please uncommpress the file and move the data to `AgentBoard/data`.
-```shell
-cd AgentBoard
-mkdir data
-tar -zxvf data.tar.gz
-```
+You can download the whole evaluation data from the anonymous Google Drive link: [data](https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing)
 
 The file structure of evaluation data is as follows:
 <details>
@@ -548,19 +538,7 @@ The general formula for estimating the total time is `4h * speed`. Here are some
 |   Llama2-70b  |   8*V100   |          vllm          |     8s/round    |     28h    |
 |   Llama2-70b  |   4*A100   |          vllm          |     4s/round    |   13.5h    |
 
-## ️Citation
-If you find this repository useful, please consider giving star and citing our paper:
-```
-@misc{ma2024agentboard,
-      title={AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents}, 
-      author={Chang Ma and Junlei Zhang and Zhihao Zhu and Cheng Yang and Yujiu Yang and Yaohui Jin and Zhenzhong Lan and Lingpeng Kong and Junxian He},
-      year={2024},
-      eprint={2401.13178},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
 
-```
 
 ## License
 [![Apache-2.0 license](https://img.shields.io/badge/Code%20License-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
