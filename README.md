@@ -8,16 +8,12 @@
 ![Data License](https://img.shields.io/badge/Data%20License-GPL--2.0-blue.svg)
 ![Code License](https://img.shields.io/badge/Code%20License-Apache--2.0-blue.svg)
 ![Python 3.8+](https://img.shields.io/badge/python-3.8.13-blue.svg)
-<!--[![slack badge](https://img.shields.io/badge/Slack-Join-blueviolet?logo=slack&amp)](https://join.slack.com/t/agentboard/shared_invite/zt-28ks1f1er-DzpwLKa41p_RArKnu2yimA)-->
-
 </div>
 
 <div align="center">
   <!-- <a href="#model">Model</a> • -->
   🌐 <a href="https://anonymous.4open.science/status/AgentBoard">Website</a> |
-  <!-- 🏆 <a href="https://hkust-nlp.github.io/agentboard/static/leaderboard.html">Leaderboard</a> |-->
   📚 <a href="https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing">Data</a> |
-  <!-- 📃 <a href="https://arxiv.org/abs/2401.13178">Paper</a> | -->
   📊 <a href="https://wandb.ai/agentboard-anon/">Panel</a>
 
 </div>
@@ -97,12 +93,11 @@ conda activate ${YOUR_ENV_NAME}
 ```
 
 **Step 2. download this repo**
-<!-- git clone https://github.com/hkust-nlp/AgentBoard.git -->
 
 
 **Step 3. Download the data from huggingface**
 
-Download the [data](https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing) and put it in `AgentBoard\data`
+Download the [data](https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing) and put it in `AgentBoard/data`
 ```shell
 cd AgentBoard/data
 tar -zxvf data.tar.gz
@@ -196,7 +191,7 @@ conda activate agentboard
 
 **Step 3. Download the code and data**
 Download the repo.
-Download the [data](https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing) and put it in `AgentBoard\data`.
+Download the [data](https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing) and put it in `AgentBoard/data`.
 ```shell
 # Download the data and move it to the project root dir
 cd AgentBoard/data
@@ -289,7 +284,6 @@ AgentBoard integrates illustrative [Weights&Bias](https://wandb.ai/site) visuali
 Before running, you need to setup wandb login or environment variable as instructed in [quick-start](#setup-environment-variables-in-agentboardenv). The visualization results would be both stored offline at `\wandb`. Normally after executing the evaluation command, you can visualize the live AgentBoard panel online at `https://wandb.ai/{your_wandb_id}/{project_name}`. We provide example WandB logging pages for [mistral-7b](https://wandb.ai/agentboard-anon/evaluate-mistral-7b?workspace=user-)
 
 Note that if your run is not logged online (on a cluster without internet), you could later sync local runs to wandb online with `wandb sync [OPTIONS] [PATH]..` as detailed in [wandb docs](https://docs.wandb.ai/ref/cli/wandb-sync). 
-<!--For more information about the features of the AgentBoard panel, Please kindly check this [Blog](https://wandb.ai/agentboard/llm-agent-eval-gpt-35-turbo-all/reports/Using-Wandb-to-Launch-AgentBoard--Vmlldzo2MTg1Njc4) for more information.-->
 
 
 #### Local log files
@@ -376,8 +370,6 @@ AgentBoard is composed of 9 diverse tasks which can be divided into 4 types, inc
   </tbody>
 </table>
 
-
-<!--o help researchers quickly understand evaluation data of each task, we provide **Dataset Viewer** at Huggingface Dataset: [🤗 AgentBoard](https://huggingface.co/datasets/hkust-nlp/agentboard).-->
 
 > Note: Please download the dataset from the link provided below for the reason that the data in Dataset Viewer is not complete.
 
@@ -549,8 +541,3 @@ The AgentBoard codebase is licensed under a [Apache-2.0 License](https://www.apa
 
 The AgentBoard dataset is licensed under a
 [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
-
-<!-- 
-## 10. Acknowledgements
-- Alfworld, ScienceWorld...
-- We would like to express our gratitude to [Open-Meteo](https://open-meteo.com/), [The Movie Database](https://www.themoviedb.org/), [Aminer](https://www.aminer.org/citation), [Todoist](https://todoist.com/) and [Google Sheets](https://www.google.com/sheets/about/) for making their APIs or data available. -->
