@@ -8,25 +8,25 @@
 ![Data License](https://img.shields.io/badge/Data%20License-GPL--2.0-blue.svg)
 ![Code License](https://img.shields.io/badge/Code%20License-Apache--2.0-blue.svg)
 ![Python 3.8+](https://img.shields.io/badge/python-3.8.13-blue.svg)
-[![slack badge](https://img.shields.io/badge/Slack-Join-blueviolet?logo=slack&amp)](https://join.slack.com/t/agentboard/shared_invite/zt-28ks1f1er-DzpwLKa41p_RArKnu2yimA)
+<!--[![slack badge](https://img.shields.io/badge/Slack-Join-blueviolet?logo=slack&amp)](https://join.slack.com/t/agentboard/shared_invite/zt-28ks1f1er-DzpwLKa41p_RArKnu2yimA)-->
 
 </div>
 
 <div align="center">
   <!-- <a href="#model">Model</a> • -->
-  🌐 <a href="https://hkust-nlp.github.io/agentboard">Website</a> |
-  🏆 <a href="https://hkust-nlp.github.io/agentboard/static/leaderboard.html">Leaderboard</a> |
-  📚 <a href="https://huggingface.co/datasets/hkust-nlp/agentboard">Data</a> |
-  📃 <a href="https://arxiv.org/abs/2401.13178">Paper</a> |
-  📊 <a href="https://wandb.ai/agentboard/llm-agent-eval-gpt-35-turbo-all/reports/Using-Wandb-to-Launch-AgentBoard--Vmlldzo2MTg1Njc4">Panel</a>
+  🌐 <a href="https://anonymous.4open.science/status/AgentBoard">Website</a> |
+  <!-- 🏆 <a href="https://hkust-nlp.github.io/agentboard/static/leaderboard.html">Leaderboard</a> |-->
+  📚 <a href="https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing">Data</a> |
+  <!-- 📃 <a href="https://arxiv.org/abs/2401.13178">Paper</a> | -->
+  📊 <a href="https://wandb.ai/agentboard-anon/">Panel</a>
 
 </div>
 
 
 
 
-## What's New
-- **[2024.01.15]** 📣 AgentBoard is released.
+  <!-- ## What's New
+- **[2024.01.15]** 📣 AgentBoard is released.-->
 
 ## Introduction
 
@@ -96,10 +96,9 @@ conda create -n ${YOUR_ENV_NAME} python=3.8.13  # python version should be 3.8.1
 conda activate ${YOUR_ENV_NAME}
 ```
 
-**Step 2. Git clone this repo**
-```shell
-git clone https://github.com/hkust-nlp/AgentBoard.git
-```
+**Step 2. download this repo**
+<!-- git clone https://github.com/hkust-nlp/AgentBoard.git -->
+
 
 **Step 3. Download the data from huggingface**
 ```shell
