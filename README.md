@@ -53,7 +53,7 @@ Click to expand the table of contents
   - [Running Open-source Models](#running-open-source-models)
   - [LLM Customization](#llm-customization)
   - [Agent Customization](#agent-customization)
-  - [Runtime Estimation](#runtime-estimation)d
+  - [Runtime Estimation](#runtime-estimation)
 </details>
 
 
