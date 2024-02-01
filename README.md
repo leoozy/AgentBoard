@@ -34,7 +34,6 @@ exploration.
 Click to expand the table of contents
 </summary>
 
-- [What's New](#whats-new)
 - [Introduction](#introduction)
 - [🚀 Quick Start](#-quick-start)
   - [Setup Environment](#setup-environment)
