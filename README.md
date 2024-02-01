@@ -280,7 +280,7 @@ python agentboard/eval_main.py \
     --project_name evaluate-gpt-35-turbo-0613 \
     --baseline_dir ./data/baseline_results
 ```
-We now offer configuration for 12 SOTA LLM models (`gpt-4`,`gpt-3.5-turbo-0613`, `text-davinci-003`,`claude2`,`deepseek-67b`,`lemur-70b`, `mistral-7b`,`codellama-13b(34b)`,`llama2-13b(70b)`,`vicuna-13b-16k`) and a simple reflex agent based on act-only prompting. You could also customize your own [agents](https://github.com/hkust-nlp/AgentBoard/blob/main/assets/agent_customization.md) and [LLMs](https://github.com/hkust-nlp/AgentBoard/blob/main/assets/llm_customization.md). Models supported by [vLLM](https://github.com/vllm-project/vllm) should be generally supported in AgentBoard, while different models may require specific prompt templates.
+We now offer configuration for 12 SOTA LLM models (`gpt-4`,`gpt-3.5-turbo-0613`, `text-davinci-003`,`claude2`,`deepseek-67b`,`lemur-70b`, `mistral-7b`,`codellama-13b(34b)`,`llama2-13b(70b)`,`vicuna-13b-16k`) and a simple reflex agent based on act-only prompting. You could also customize your own [agents](https://anonymous.4open.science/r/AgentBoard/assets/agent_customization.md) and [LLMs](https://anonymous.4open.science/r/AgentBoard/assets/llm_customization.md). Models supported by [vLLM](https://github.com/vllm-project/vllm) should be generally supported in AgentBoard, while different models may require specific prompt templates.
 
 
 ### Launch AgentBoard Analytical Evaluation Panel
