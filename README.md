@@ -14,7 +14,7 @@
   <!-- <a href="#model">Model</a> • -->
   🌐 <a href="https://anonymous.4open.science/status/AgentBoard">Website</a> |
   📚 <a href="https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing">Data</a> |
-  📊 <a href="https://wandb.ai/agentboard-anon/">Panel</a>
+  📊 <a href="https://wandb.ai/agentboard-anon/evaluate-mistral-7b/runs/twyhr6x1?workspace=user-">Panel</a>
 
 </div>
 
