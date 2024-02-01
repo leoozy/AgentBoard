@@ -177,7 +177,7 @@ Click to expand docker setup procedures. (~12G, 5 minutes)
 
 **Step 1. Pull the docker image and run docker locally**
 ```shell
-docker pull zzh202121/agentboard:0117
+docker pull anonymous2024/agentboard:0201
 docker run -itd \
     --gpus all \
     --network host \
@@ -185,7 +185,7 @@ docker run -itd \
     --shm-size 64gb \
     -v /MODEL_PATH:/model_download \
     -v /DATA_PATH:/data \
-    zzh202121/agentboard:0117 \
+    anonymous2024/agentboard:0201 \
     /bin/bash
 docker attach agent_space # YOUR_CONTAINER_NAME
 ```
