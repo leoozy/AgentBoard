@@ -1,28 +1,14 @@
 <div align="center">
-<img src="./assets/agentboard.png" style="width: 20%;height: 10%">
 <h1> AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents </h1>
 </div>
 
 <div align="center">
-
-![Data License](https://img.shields.io/badge/Data%20License-GPL--2.0-blue.svg)
-![Code License](https://img.shields.io/badge/Code%20License-Apache--2.0-blue.svg)
-![Python 3.8+](https://img.shields.io/badge/python-3.8.13-blue.svg)
-</div>
-
-<div align="center">
   <!-- <a href="#model">Model</a> • -->
-  🌐 <a href="https://anonymous.4open.science/status/AgentBoard">Website</a> |
-  📚 <a href="https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing">Data</a> |
-  📊 <a href="https://wandb.ai/agentboard-anon/evaluate-mistral-7b/runs/twyhr6x1?workspace=user-">Panel</a>
+  📚 <a href="https://drive.google.com/file/d/1h8fQlQi-Xk-dmKpUlKbwTZi3vLg3jXVv/view?usp=sharing">Anonymous Data Link</a> |
+  📊 <a href="https://wandb.ai/agentboard-anon/evaluate-mistral-7b">Anonymous Panel Link</a>
 
 </div>
 
-
-
-
-  <!-- ## What's New
-- **[2024.01.15]** 📣 AgentBoard is released.-->
 
 ## Introduction
 
@@ -67,9 +53,7 @@ Click to expand the table of contents
   - [Running Open-source Models](#running-open-source-models)
   - [LLM Customization](#llm-customization)
   - [Agent Customization](#agent-customization)
-  - [Runtime Estimation](#runtime-estimation)
-- [️Citation](#️citation)
-- [License](#license)
+  - [Runtime Estimation](#runtime-estimation)d
 </details>
 
 
@@ -530,14 +514,3 @@ The general formula for estimating the total time is `4h * speed`. Here are some
 |   Llama2-70b  |   8*V100   |          vllm          |     8s/round    |     28h    |
 |   Llama2-70b  |   4*A100   |          vllm          |     4s/round    |   13.5h    |
 
-
-
-## License
-[![Apache-2.0 license](https://img.shields.io/badge/Code%20License-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-
-The AgentBoard codebase is licensed under a [Apache-2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
-
-[![GPL-2.0](https://img.shields.io/badge/Data%20License-GPL--2.0-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-
-The AgentBoard dataset is licensed under a
-[GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
