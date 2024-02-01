@@ -31,7 +31,7 @@ TODO_KEY=${YOUR_TODO_API_TOKEN}
 ```
 
 
-## 5. Shee
+## 5. Sheet
 
 Step 1. Sign up a Google Account
 
